@@ -1,4 +1,6 @@
 ---
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/wsibcloud/webportal-eac.svg)](https://greenkeeper.io/)
 services: active-directory-b2c
 platforms: javascript
 author: parakhj
