@@ -13,10 +13,10 @@ var MsalService = (function () {
     function MsalService() {
         this.B2CTodoAccessTokenKey = "b2c.todo.access.token";
         this.tenantConfig = {
-            tenant: "fabrikamb2c.onmicrosoft.com",
-            clientID: '90c0fe63-bcf2-44d5-8fb7-b8bbc0b29dc6',
-            signUpSignInPolicy: "b2c_1_susi",
-            b2cScopes: ["https://fabrikamb2c.onmicrosoft.com/demoapi/demo.read"]
+            tenant: "wsibeac.onmicrosoft.com",
+            clientID: '00c35ee9-bda8-4711-8025-79364faaad54',
+            signUpSignInPolicy: "B2C_1_SiUpInPolicy",
+            b2cScopes: ["https://wsibeac.onmicrosoft.com/demoapi/demo.read"]
         };
         // Configure the authority for Azure AD B2C
         this.authority = "https://login.microsoftonline.com/tfp/" + this.tenantConfig.tenant + "/" + this.tenantConfig.signUpSignInPolicy;

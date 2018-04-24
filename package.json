@@ -2,7 +2,7 @@
   "name": "webportal-eac",
   "version": "1.0.0",
   "scripts": {
-    "start": "npm run build:watch",
+    "start": "concurrently \"npm run build:watch\" \"npm run serve\"",
     "build": "tsc -p src/",
     "build:watch": "tsc -p src/ -w",
     "serve": "lite-server -c=bs-config.json",
