@@ -19,7 +19,7 @@ export class MsalService {
     authority = "https://login.microsoftonline.com/tfp/" + this.tenantConfig.tenant + "/" + this.tenantConfig.signUpSignInPolicy;
 
     /*
-     * B2C SignIn SignUp Policy Configuration
+     * B2C SignIn SignUp Policy Configuration Arindam
      */
     clientApplication = new Msal.UserAgentApplication(
         this.tenantConfig.clientID, this.authority, 
