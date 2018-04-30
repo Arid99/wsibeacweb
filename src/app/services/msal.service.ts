@@ -9,12 +9,12 @@ export class MsalService {
     B2CTodoAccessTokenKey = "b2c.todo.access.token";
 
     tenantConfig = {
-        tenant: "wsibeac.onmicrosoft.com",
+        tenant: "eacadb2cpoc.onmicrosoft.com",
         clientID: '00c35ee9-bda8-4711-8025-79364faaad54',
         signUpSignInPolicy: "B2C_1_SiUpInPolicy",
-        b2cScopes: ["https://wsibeac.onmicrosoft.com/demoapi/demo.read"]
+        b2cScopes: ["https://eacadb2cpoc.onmicrosoft.com/demoapi/demo.read"]
     };
-    
+
     // Configure the authority for Azure AD B2C
     authority = "https://login.microsoftonline.com/tfp/" + this.tenantConfig.tenant + "/" + this.tenantConfig.signUpSignInPolicy;
 
@@ -22,7 +22,7 @@ export class MsalService {
      * B2C SignIn SignUp Policy Configuration Arindam
      */
     clientApplication = new Msal.UserAgentApplication(
-        this.tenantConfig.clientID, this.authority, 
+        this.tenantConfig.clientID, this.authority,
         function (errorDesc: any, token: any, error: any, tokenType: any) {
             // Called after loginRedirect or acquireTokenPopup
         }
@@ -56,6 +56,6 @@ export class MsalService {
     };
 
     isOnline(): boolean {
-        return this.clientApplication.getUser() != null; 
+        return this.clientApplication.getUser() != null;
     };
 }
