@@ -16,7 +16,7 @@ var MsalService = (function () {
             tenant: "wsibeac.onmicrosoft.com",
             clientID: '00c35ee9-bda8-4711-8025-79364faaad54',
             signUpSignInPolicy: "B2C_1_SiUpInPolicy",
-            b2cScopes: ["https://wsibeac.onmicrosoft.com/demoapi/demo.read"]
+            b2cScopes: ["https://eacadb2cpoc.onmicrosoft.com/demoapi/demo.read"]
         };
         // Configure the authority for Azure AD B2C
         this.authority = "https://login.microsoftonline.com/tfp/" + this.tenantConfig.tenant + "/" + this.tenantConfig.signUpSignInPolicy;
@@ -56,7 +56,7 @@ var MsalService = (function () {
     };
     ;
     MsalService = __decorate([
-        core_1.Injectable(), 
+        core_1.Injectable(),
         __metadata('design:paramtypes', [])
     ], MsalService);
     return MsalService;
